@@ -1,12 +1,12 @@
 
 function checkAnswer () {
     let correctAnswer = "4";
-    let selectedAnswer = document.querySelector('nput[name="quiz"]:checked');
+    let selectedAnswer = document.querySelector('input[name="quiz"]:checked');
     let userAnswer = selectedAnswer ? selectedAnswer.value : null;
     let feedback = document.getElementById('feedback');
 
     if (userAnswer === null) {
-        feedback.textContent = 'please select an answer';
+        feedback.textContent = 'Please select an answer';
     } else if (userAnswer === correctAnswer) {
         feedback.textContent = 'correct!';
     } else {
@@ -15,4 +15,4 @@ function checkAnswer () {
 
 }
 
-document.getElementById('submit-answere').addEventListener('click', checkAnswer);
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);     
