@@ -8,9 +8,9 @@ function checkAnswer () {
     if (userAnswer === null) {
         feedback.textContent = 'Please select an answer';
     } else if (userAnswer === correctAnswer) {
-        feedback.textContent = '"Correct! Well done."';
+        feedback.textContent = 'Correct! Well done.';
     } else {
-        feedback.textContent = 'Wrong answer, try again.';
+        feedback.textContent = "That's incorrect. Try again!";
     }
 
 }
